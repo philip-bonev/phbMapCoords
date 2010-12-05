@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: phbMapCoordsOptions
+## Author: Manix
+## Version: 3.30
+## Notes: Options for phbMapCoords
+## Dependencies: phbMapCoords
+## LoadOnDemand: 1
+localization.lua
+phbMapCoordsOptions.lua

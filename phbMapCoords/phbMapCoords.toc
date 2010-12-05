@@ -1,0 +1,11 @@
+## Interface: 30300
+## Title: phbMapCoords
+## Author: Manix
+## Version: 3.30
+## Notes: Show coords on Minimap and Worldmap
+## Notes-deDE: Zeigt Koordinaten auf Minimap und Weltkarte
+## OptionalDeps: Blizzard_TimeManager
+## SavedVariables: phbMapCoordsDB
+## Dependencies: 
+localization.lua
+phbMapCoords.lua
