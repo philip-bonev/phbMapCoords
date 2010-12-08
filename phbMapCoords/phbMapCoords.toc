@@ -1,7 +1,7 @@
-## Interface: 30300
+## Interface: 40000
 ## Title: phbMapCoords
 ## Author: Manix
-## Version: 3.30
+## Version: 4.00
 ## Notes: Show coords on Minimap and Worldmap
 ## Notes-deDE: Zeigt Koordinaten auf Minimap und Weltkarte
 ## OptionalDeps: Blizzard_TimeManager

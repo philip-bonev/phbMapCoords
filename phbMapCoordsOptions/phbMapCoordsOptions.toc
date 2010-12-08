@@ -1,7 +1,7 @@
-## Interface: 30300
+## Interface: 40000
 ## Title: phbMapCoordsOptions
 ## Author: Manix
-## Version: 3.30
+## Version: 4.00
 ## Notes: Options for phbMapCoords
 ## Dependencies: phbMapCoords
 ## LoadOnDemand: 1

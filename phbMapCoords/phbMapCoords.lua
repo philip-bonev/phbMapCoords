@@ -50,7 +50,7 @@ addon.MiniMapFrameCoords = CreateFrame("Frame", "phbMiniMapCoordText", addon.Min
 addon.MiniMapFrameCoords:SetWidth(40)
 addon.MiniMapFrameCoords:SetHeight(16)
 addon.MiniMapFrameCoords:EnableMouse(false)
-addon.MiniMapFrameCoords:SetPoint("BOTTOM", addon.MiniMapFrame, "BOTTOM", 0,-22)
+addon.MiniMapFrameCoords:SetPoint("BOTTOM", addon.MiniMapFrame, "BOTTOM", 0,-28)
 addon.MiniMapFrameCoords.loc = addon.MiniMapFrameCoords:CreateFontString(nil, "OVERLAY")
 addon.MiniMapFrameCoords.loc:SetWidth(40)
 addon.MiniMapFrameCoords.loc:SetHeight(16)
@@ -75,12 +75,10 @@ local worldMapUpdate = function ()
 		return
 	end
 	local output = ""
-	local OFFSET_X = 0.0022
-	local OFFSET_Y = -0.0262
 
 
 	local x, y = GetCursorPosition()
-	local scale = WorldMapFrame:GetScale()
+	local scale = WorldMapFrame:GetEffectiveScale()
 	x = x / scale
 	y = y / scale
 	local width = WorldMapButton:GetWidth()
@@ -88,8 +86,8 @@ local worldMapUpdate = function ()
 	local centerX, centerY = WorldMapFrame:GetCenter()
 	local adjustedX = (x - (centerX - (width/2))) / width
 	local adjustedY = (centerY + (height/2) - y) / height
-	x = (adjustedX + OFFSET_X) * 100
-	y = (adjustedY + OFFSET_Y) * 100
+	x = adjustedX * 100
+	y = adjustedY * 100
 	output = PHBMAPCOORDS_CURSORCOORDS..format("%d,%d",x,y)
 
 	local px, py = GetPlayerMapPosition("player")
